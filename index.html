@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Notaría 96 - Monterrey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,600" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f5f6fa; /* Fondo gris claro */
+    }
+    header .navbar-brand img { height: 50px; }
+    .carousel-caption h1 { font-size: 2.5em; }
+    .btn-wsp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366; 
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      z-index: 1000;
+    }
+    footer {
+      background-color: #004d80;
+      color: white;
+      padding: 20px 0;
+    }
+    .footer-grid a { color: white; text-decoration: underline; }
+    .services-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    .service-card {
+      background: #fff;
+      border: 2px solid #004d80;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      padding: 30px 20px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .service-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(0,77,128,0.18);
+      border-color: #25D366;
+    }
+    .service-card img {
+      width: 180px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+    .service-card h4 {
+      color: #004d80;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    .main-navbar {
+      background: linear-gradient(90deg, #003366 0%, #4f8edc 100%);
+      border: none;
+      border-radius: 0;
+      margin-bottom: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      min-height: 70px;
+    }
+    .main-navbar .navbar-nav {
+      float: none;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+    }
+    .main-navbar .navbar-nav > li {
+      float: none;
+      display: inline-block;
+      margin: 0 18px;
+    }
+    .main-navbar .navbar-nav > li > a {
+      color: #fff !important;
+      font-size: 1.15em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 18px 12px;
+      transition: background 0.2s, color 0.2s;
+      border-radius: 6px;
+    }
+    .main-navbar .navbar-nav > li.active > a,
+    .main-navbar .navbar-nav > li > a:hover,
+    .main-navbar .navbar-nav > li > a:focus {
+      background: rgba(255,255,255,0.13);
+      color: #fff !important;
+      text-shadow: 0 1px 6px #004d80;
+    }
+    .main-navbar .navbar-toggle {
+      border-color: #fff;
+      background: #25d366;
+      margin-top: 18px;
+    }
+    .main-navbar .icon-bar {
+      background: #fff;
+    }
+    @media (max-width: 991px) {
+      .main-navbar .navbar-nav {
+        display: block;
+        text-align: center;
+        height: auto;
+      }
+      .main-navbar .navbar-nav > li {
+        display: block;
+        margin: 0;
+      }
+      .main-navbar .navbar-nav > li > a {
+        padding: 12px 0;
+      }
+    }
+    @media (max-width: 991px) {
+      .services-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .service-card {
+        width: 90%;
+        min-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body class="no-trans">
+
+<!-- WhatsApp Button -->
+<a href="https://api.whatsapp.com/send?phone=+528183402440&text=Hola%2C%20me%20interesa%20más%20información." class="btn-wsp" target="_blank">
+  <i class="fa fa-whatsapp"></i>
+</a>
+
+<!-- Header -->
+<header class="header fixed navbar navbar-fixed-top">
+    <div class="container"></div>
+        <nav class="navbar main-navbar" style="background: linear-gradient(90deg, #0f2027 0%, #2c5364 100%); box-shadow: 0 4px 24px rgba(44,83,100,0.18);">
+            <div class="navbar-header" style="display: flex; align-items: center;">
+                <a class="navbar-brand" href="#" style="display: flex; align-items: center; gap: 18px;">
+                    <img src="images/NOTARIOS.png" alt="Notaría 96" style="height:58px; margin-top:-10px; border-radius:14px; box-shadow: 0 2px 16px rgba(44,83,100,0.18); background: #fff; padding: 5px;">
+                    <span style="font-family: 'Raleway', sans-serif; font-size: 2em; font-weight: 800; color: #fff; letter-spacing: 3px; text-shadow: 0 3px 12px #0f2027;">Notaría 96</span>
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" style="margin-left: auto;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav navbar-center" style="gap: 48px; display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <li class="active"><a href="#" style="font-family: 'Raleway', sans-serif; font-size: 1.25em; font-weight: 700; letter-spacing: 2px; color: #fff; padding: 22px 18px; transition: color 0.2s, background 0.2s; border-radius: 8px;">Inicio</a></li>
+                    <li><a href="#about" style="font-family: 'Raleway', sans-serif; font-size: 1.25em; font-weight: 700; letter-spacing: 2px; color: #fff; padding: 22px 18px; transition: color 0.2s, background 0.2s; border-radius: 8px;">Nosotros</a></li>
+                    <li><a href="#services" style="font-family: 'Raleway', sans-serif; font-size: 1.25em; font-weight: 700; letter-spacing: 2px; color: #fff; padding: 22px 18px; transition: color 0.2s, background 0.2s; border-radius: 8px;">Servicios</a></li>
+                    <li><a href="#contact" style="font-family: 'Raleway', sans-serif; font-size: 1.25em; font-weight: 700; letter-spacing: 2px; color: #fff; padding: 22px 18px; transition: color 0.2s, background 0.2s; border-radius: 8px;">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+<!-- About -->
+<section class="section container" id="about">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <h2 class="title"><strong>¿Quiénes Somos?</strong></h2>
+      <p style="text-align:center;">Somos una notaría comprometida con brindar un servicio profesional, transparente y seguro jurídicamente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section container" id="services">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2><strong>Nuestros Servicios</strong></h2>
+      <p>Ofrecemos soluciones completas en:</p>
+    </div>
+  </div>
+  <div class="services-row">
+    <div class="service-card">
+      <img src="images/INMOBILIARIA.png" alt="Inmobiliaria">
+      <h4>Inmobiliaria</h4>
+      <p>Compra-venta, donaciones, hipotecas y trámites relacionados con bienes raíces.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/TESTAMENTO.png" alt="Testamentos">
+      <h4>Testamentos</h4>
+      <p>Asesoría y elaboración de testamentos para proteger tu patrimonio y seres queridos.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/SECRETARIA.png" alt="Mercantil y Corporativo">
+      <h4>Mercantil y Corporativo</h4>
+      <p>Constitución de empresas, actas, poderes y trámites mercantiles.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/FINANCIERA.png" alt="Derecho Civil">
+      <h4>Derecho Civil</h4>
+      <p>Contratos, poderes notariales, fe de hechos y otros servicios civiles.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section container" id="contact">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Contacto</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Correo" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <iframe src="https://maps.app.goo.gl/LgPMQbdXixyxVnLLA"  width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <p><strong>Dirección:</strong> Mariano Escobedo Sur 592, C.P. 64000, Monterrey, NL</p>
+  <p><strong>Teléfono:</strong> 8183402440 | <strong>Email:</strong> <a href="mailto:permisos@notaria96.mx">permisos@notaria96.mx</a></p>
+  <p>&copy; 2025 Notaría 96. Diseño por <a href="#" target="_blank">Tu Desarrollador</a></p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</body>
+</html>
